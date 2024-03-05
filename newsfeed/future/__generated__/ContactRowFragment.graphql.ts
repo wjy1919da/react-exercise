@@ -1,5 +1,5 @@
 /**
- * @generated SignedSource<<86525c4d76d3a11cc03e14114cabaa69>>
+ * @generated SignedSource<<1ea97796d43d2f5b8f664667760fa932>>
  * @lightSyntaxTransform
  * @nogrep
  */
@@ -10,23 +10,23 @@
 
 import { Fragment, ReaderFragment } from 'relay-runtime';
 import { FragmentRefs } from "relay-runtime";
-export type PosterBylineFragment$data = {
+export type ContactRowFragment$data = {
   readonly name: string | null;
   readonly profilePicture: {
     readonly " $fragmentSpreads": FragmentRefs<"ImageFragment">;
   } | null;
-  readonly " $fragmentType": "PosterBylineFragment";
+  readonly " $fragmentType": "ContactRowFragment";
 };
-export type PosterBylineFragment$key = {
-  readonly " $data"?: PosterBylineFragment$data;
-  readonly " $fragmentSpreads": FragmentRefs<"PosterBylineFragment">;
+export type ContactRowFragment$key = {
+  readonly " $data"?: ContactRowFragment$data;
+  readonly " $fragmentSpreads": FragmentRefs<"ContactRowFragment">;
 };
 
 const node: ReaderFragment = {
   "argumentDefinitions": [],
   "kind": "Fragment",
   "metadata": null,
-  "name": "PosterBylineFragment",
+  "name": "ContactRowFragment",
   "selections": [
     {
       "alias": null,
@@ -44,18 +44,7 @@ const node: ReaderFragment = {
       "plural": false,
       "selections": [
         {
-          "args": [
-            {
-              "kind": "Literal",
-              "name": "height",
-              "value": 60
-            },
-            {
-              "kind": "Literal",
-              "name": "width",
-              "value": 60
-            }
-          ],
+          "args": null,
           "kind": "FragmentSpread",
           "name": "ImageFragment"
         }
@@ -67,6 +56,6 @@ const node: ReaderFragment = {
   "abstractKey": "__isActor"
 };
 
-(node as any).hash = "938d765c6f632a3114b21ce8d9887441";
+(node as any).hash = "827eec936b9d3c62dac5ff23d6b8d5e2";
 
 export default node;
